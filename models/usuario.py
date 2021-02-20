@@ -12,28 +12,31 @@ class Usuario(object):
     self.endereco = ""
     self.permissao = 0
   def fazerLogin(self,email,senha):
-    usuarios = open('bd_fake/usuarios.txt', 'r')
-    for user in usuarios:
-      usuarioModel =  json.loads(user)
-      email_user = usuarioModel["email"]
-      email.split(' ')
-      email_user.split(' ')
-      senha_user = usuarioModel["senha"]
-      role = usuarioModel["role"]
-      if (email == email_user and senha == senha_user ):
-        print("acesso autorizado")
-        self.email = email
-        self.senha = senha
-        self.nome = usuarioModel["nome"]
-        if (role == 1):
-          return 1
-        elif(role == 2):
-          return 2
-        elif(role == 3):
-          return 3
-        break
-      else:
-        print("acesso negado")
+    try:
+      usuarios = open('bd_fake/usuarios.txt', 'r')
+      for user in usuarios:
+          usuarioModel =  json.loads(user)
+          email_user = usuarioModel["email"]
+          email.split(' ')
+          email_user.split(' ')
+          senha_user = usuarioModel["senha"]
+          role = usuarioModel["role"]
+          if (email == email_user and senha == senha_user ):
+            print("acesso autorizado")
+            self.email = email
+            self.senha = senha
+            self.nome = usuarioModel["nome"]
+            if (role == 1):
+              return 1
+            elif(role == 2):
+              return 2
+            elif(role == 3):
+                return 3
+            break
+          else:
+            print("acesso negado")
+    except:
+      raise(Exception("Usuario ou senha invalidos!"))
       
   def fazerLogout(self):
     self.email = None
