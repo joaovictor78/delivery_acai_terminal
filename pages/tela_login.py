@@ -16,14 +16,15 @@ def telaLogin():
     minhaConta = cliente.Cliente()
     try:
       role = minhaConta.fazerLogin(email, senha)
-      if(role == 1):
-        tela_admin.telaAdmin()
-      elif(role == 2):
-        tela_entregador.telaEntregador()
-      elif(role == 3):
-        tela_cliente.telaCliente(minhaConta)
     except Exception as error:
-      os.system('cls' if os.name == 'nt' else 'clear')
-      print("************* Ocorreu um erro ao logar ***************")
-      print(error)
-      resp = input("Deseja tentar novamente? S/N ")
+       print("********** Ocorreu um erro ao logar Pults *********")
+       print(error)
+       resp =  input("Deseja tentar novamente? S/N")
+    if(resp != "N"):
+      if(role == 1):
+          tela_admin.telaAdmin()
+      elif(role == 2):
+          tela_entregador.telaEntregador()
+      elif(role == 3):
+          tela_cliente.telaCliente(minhaConta)
+    
