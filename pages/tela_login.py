@@ -3,10 +3,11 @@ from models import cliente
 from pages import tela_admin, tela_cliente, tela_entregador
 
 def telaLogin():
+  role = None
   resp = "S"
   while(resp == "S"):
     os.system('cls' if os.name == 'nt' else 'clear')
-    print("*************************************")
+    print("*********************************")
     print("             Açai Universo            ")
     print("Bem vindo a melhor acaiteria da cidade!")
     print("--------------------------------------")
@@ -17,14 +18,14 @@ def telaLogin():
     try:
       role = minhaConta.fazerLogin(email, senha)
     except Exception as error:
-       print("********** Ocorreu um erro ao logar Pults *********")
-       print(error)
-       resp =  input("Deseja tentar novamente? S/N")
-    if(resp != "N"):
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("****** Ocorreu um erro ao logar *****")
+      print(error)
+      resp =  input("Deseja tentar novamente? S/N")
+    if(role != None):
       if(role == 1):
-          tela_admin.telaAdmin()
+        tela_admin.telaAdmin()
       elif(role == 2):
-          tela_entregador.telaEntregador()
+        tela_entregador.telaEntregador()
       elif(role == 3):
-          tela_cliente.telaCliente(minhaConta)
-    
+        tela_cliente.telaCliente(minhaConta)
