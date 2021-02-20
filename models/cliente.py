@@ -1,5 +1,5 @@
 from models import usuario
-import json
+import json, time
 class Endereco():
   def __init__(self,bairro,rua,numero_casa,cep,complemento,cidade,telefone):
     self.bairro = bairro
@@ -31,6 +31,7 @@ class Cliente(usuario.Usuario):
     pedidos = open('bd_fake/pedidos.txt', 'a')
     pedidos.write(pedidoJson + "\n")
     print("Seu pedido foi realizado com sucesso!")
+    time.sleep(10)
   def listaMeusPedidos(self):
     return self.meuspedidos
 

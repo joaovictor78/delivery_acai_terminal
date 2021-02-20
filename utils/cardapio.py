@@ -1,5 +1,6 @@
 import os
 import json
+
 def getCardapio():
   os.system('cls' if os.name == 'nt' else 'clear')
   produtosDisponiveis = open("bd_fake/produtos.txt","r")

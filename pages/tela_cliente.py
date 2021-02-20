@@ -1,7 +1,9 @@
-import os, json
-from models import produtos, pedido, item_pedido
+import json
+from models import pedido, item_pedido
+from utils import cardapio, adicionarprodutos
 from pages import tela_entregador
-from utils import cardapio
+import time
+
 class Pedido:
   lista_produtos = []
 def telaCliente(minhaConta):
@@ -11,11 +13,13 @@ def telaCliente(minhaConta):
     item = item_pedido.ItemPedido()
     produtos = cardapio.getCardapio()
     tipoAcai = input("Escolha um dos nossos formatos de açai e aproveite:):")
+
     for produto in produtos:
       produtoModel =  json.loads(produto)
-    item.produto = meu_produto
-    item.quantidade = int(quantidade_pedido)
-    meu_pedido.listaProdutos.append(item)
+      meu_produto = adicionarprodutos.adicionarProduto(tipoAcai, produtoModel)
+      item.produto = meu_produto[0]
+      item.quantidade = int(meu_produto[1])
+      meu_pedido.listaProdutos.append(item)
     novo_produto = input("Deseja adicionar mais algum produto? S/N ")
     if(novo_produto == "N"):
       for item in meu_pedido.listaProdutos:
@@ -25,5 +29,3 @@ def telaCliente(minhaConta):
          meu_pedido.precoTotal += precoTotal
       tela_entregador.pedido = meu_pedido
       minhaConta.fazerPedido(meu_pedido)
-  
-  

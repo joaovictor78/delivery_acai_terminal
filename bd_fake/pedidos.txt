@@ -1,3 +1,5 @@
 {"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
 {"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
 {"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}, {"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
