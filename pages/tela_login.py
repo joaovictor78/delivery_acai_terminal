@@ -1,6 +1,6 @@
 import os
 from models import cliente
-from pages import tela_admin, tela_cliente, tela_entregador
+from pages import tela_admin, tela_cliente, tela_entregador, tela_inicial
 
 def telaLogin():
   role = None
@@ -25,7 +25,13 @@ def telaLogin():
     if(role != None):
       if(role == 1):
         tela_admin.telaAdmin()
+        os.system('cls' if os.name == 'nt' else 'clear')
+        tela_inicial.telaInicial()
       elif(role == 2):
         tela_entregador.telaEntregador()
+        os.system('cls' if os.name == 'nt' else 'clear')
+        tela_inicial.telaInicial()
       elif(role == 3):
         tela_cliente.telaCliente(minhaConta)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        tela_inicial.telaInicial()

@@ -1,9 +1,7 @@
-import os, json
-from models import produtos, pedido, item_pedido
+from models import pedido, item_pedido
 from pages import tela_entregador
 from utils import cardapio, adicionarprodutos
-class Pedido:
-  lista_produtos = []
+
 def telaCliente(minhaConta):
   meu_pedido = pedido.Pedido()
   novo_produto = "S"

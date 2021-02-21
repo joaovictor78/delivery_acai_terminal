@@ -1,5 +1,4 @@
-from models import produtos
-from models import produtos, pedido, item_pedido
+from models import produtos, pedido
 import json
 meu_pedido = pedido.Pedido()
 def adicionarProduto(item):
@@ -81,7 +80,7 @@ def adicionarProduto(item):
         meu_produto.calcPrecoTotal(meu_produto.preco_produto, quantidade_pedido)
       elif(produtoModel["id"] == 3):
         meu_produto = produtos.AcaiCopo(produtoModel["Adicionais"], produtoModel  ["tamanhos"], produtoModel["Coberturas"])
-        meu_produto.setAtributos(produtoModel["preco"], produtoModel["descricao"],   produtoModel["ingredientes"])
+        meu_produto.setAtributos(produtoModel["preco"], produtoModel["descricao"], produtoModel["ingredientes"])
         tamanho = input("Escolha o tamanho do Copo: ")
         meu_produto.escolherCopo(int(tamanho))
         print("Tipos de Adicionais:")
@@ -90,12 +89,13 @@ def adicionarProduto(item):
           counter +=1
           print(str(counter) + " - " + adicionais)
         adicionais = input("Escolha os Adicionais: ")
+        meu_produto.escolherAdicionais(adicionais)
         counter = 0
         for cobertura in produtoModel["Coberturas"]:
           counter += 1
           print(str(counter) + " - " + cobertura)
         cobertura = input("Escolha as Coberturas:")
-        meu_produto.escolherAdicionais(adicionais)
+        meu_produto.escolherCobertura(int(cobertura))
         quantidade_pedido = input("Quantos açais você deseja ?")
   item.produto = meu_produto
   item.quantidade = int(quantidade_pedido)
