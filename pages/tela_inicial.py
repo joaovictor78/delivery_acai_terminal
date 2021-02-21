@@ -27,6 +27,11 @@ def telaInicial():
       print("Ocorreu um erro com o tipo de dado informado, tente novamente")
       continue
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  
+
+>>>>>>> origin/developer_project
 =======
   
 
