@@ -26,3 +26,8 @@ def telaInicial():
     except ValueError:
       print("Ocorreu um erro com o tipo de dado informado, tente novamente")
       continue
+<<<<<<< HEAD
+=======
+  
+
+>>>>>>> origin/developer_project
