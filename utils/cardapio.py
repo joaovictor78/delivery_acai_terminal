@@ -11,5 +11,3 @@ def getCardapio():
   for produto in produtosDisponiveis:
     produtoModel =  json.loads(produto)
     print(str(produtoModel["id"]) + " - Açai " + str(produtoModel["tipo"]))
-  produtos_disponiveis = open("bd_fake/produtos.txt","r")
-  return produtos_disponiveis
