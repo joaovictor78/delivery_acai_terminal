@@ -13,7 +13,6 @@ def telaCliente(minhaConta):
     item = item_pedido.ItemPedido()
     produtos = cardapio.getCardapio()
     tipoAcai = input("Escolha um dos nossos formatos de açai e aproveite:):")
-
     for produto in produtos:
       produtoModel =  json.loads(produto)
       meu_produto = adicionarprodutos.adicionarProduto(tipoAcai, produtoModel)
@@ -23,9 +22,10 @@ def telaCliente(minhaConta):
     novo_produto = input("Deseja adicionar mais algum produto? S/N ")
     if(novo_produto == "N"):
       for item in meu_pedido.listaProdutos:
-         qtd = item.quantidade
-         preco = item.produto.preco_produto
-         precoTotal = preco * qtd
-         meu_pedido.precoTotal += precoTotal
+        qtd = item.quantidade
+        preco = item.produto.preco_produto
+        precoTotal = preco * qtd
+        meu_pedido.precoTotal += precoTotal
       tela_entregador.pedido = meu_pedido
       minhaConta.fazerPedido(meu_pedido)
+ 
