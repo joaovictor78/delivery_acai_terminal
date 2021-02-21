@@ -16,4 +16,4 @@ def telaInicial():
   elif(option == "2"):
     tela_cadastro.telaCadastro()
     os.system('cls' if os.name == 'nt' else 'clear')
-    telaInicial() 
+    telaInicial()
