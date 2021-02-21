@@ -23,4 +23,3 @@ def telaCliente(minhaConta):
         meu_pedido.precoTotal += precoTotal
       tela_entregador.pedido = meu_pedido
       minhaConta.fazerPedido(meu_pedido)
-  
