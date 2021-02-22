@@ -41,6 +41,7 @@ class Usuario(object):
       print("acesso negado")
       raise(Exception("Usuario ou senha invalidos!"))
       return None
+    
       
   def fazerLogout(self):
     self.email = None
