@@ -8,14 +8,14 @@ def telaInicial():
   print('**************************************')
   print('1 - Login')
   print('2 - Cadastrar')
-  while True:
+  while(True):
     try:
-      option = input("Escolha uma das opções acima para continuar: ")  
-      if(option == "1"):
+      option = int(input("Escolha uma das opções acima para continuar: "))  
+      if(option == 1):
         tela_login.telaLogin()
         os.system('cls' if os.name == 'nt' else 'clear')
         telaInicial()
-      elif(option == "2"):
+      elif(option == 2):
         tela_cadastro.telaCadastro()
         os.system('cls' if os.name == 'nt' else 'clear')
         telaInicial()

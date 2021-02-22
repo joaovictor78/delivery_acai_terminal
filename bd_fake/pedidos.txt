@@ -23,3 +23,4 @@
 {"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
 {"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
 {"itens_pedido": [{"quantidade": 1, "produto": {"preco": 8.5, "cobertura": "Mel"}}, {"quantidade": 1, "produto": {"preco": 8.5, "cobertura": "Mel"}}, {"quantidade": 1, "produto": {"preco": 8.5, "cobertura": "Mel"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Chocolate"}}]}

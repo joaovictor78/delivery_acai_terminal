@@ -13,8 +13,8 @@ def validaName(name):
 def validaTelefone(phone):
   if(len(phone) == 0):
     raise Exception("O número de telefone não pode ser nulo!")
-  elif(len(phone) != 8 and len(phone) != 9):
-    raise Exception("O número de telefone tem que ter 8 ou 9 dígitos")
+  elif(len(phone) != 10 and len(phone) != 11):
+    raise Exception("Além do número de telefone, você deve colocar o DDD")
 
 def validaSenha(password):
   if(len(password) == 0):

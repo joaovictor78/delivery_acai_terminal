@@ -225,5 +225,4 @@ def adicionarProduto(item):
   item.produto = meu_produto
   item.quantidade = quantidade_pedido
   meu_pedido.listaProdutos.append(item)
-  
   return meu_pedido
