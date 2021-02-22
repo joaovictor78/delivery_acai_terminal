@@ -6,14 +6,14 @@ class AcaiNaBarca(produto.Produto):
     self.tamanhosBarca = tamanhosBarca
     self.coberturas = coberturaBarca
   def escolherComplemento(self, value):
-    indexValue = int(value) - 1
+    indexValue = value - 1
     self.complementosSelecionados = self.complementos[indexValue]
 
   def escolherCobertura(self, value):
-    index = int(value) - 1
+    index = value - 1
     self.coberturaSelecionada = self.coberturas[index]
   def escolherBarca(self, value):
-    index = int(value) - 1
+    index = value - 1
     self.tamanhoBarcaSelecionada = self.tamanhosBarca[index]
 
 class AcaiTigela(produto.Produto):
@@ -28,18 +28,22 @@ class AcaiTigela(produto.Produto):
   #override
   def calcPrecoTotal(self, preco, quantidade):
     self.quantidade = quantidade
-    self.precoTotal = float(preco) * float(quantidade) + self.precoFrutasExtrasTotal
+    self.precoTotal = preco * quantidade + self.precoFrutasExtrasTotal
   def escolherFruta(self, value):
-    value = re.sub('[^0-9]', '', value)
-    fruta1 = int(value[0]) - 1
-    fruta2 = int(value[1]) - 1
-    fruta3 = int(value[2]) - 1
-    self.frutasSelecionadas = [self.frutas[fruta1], self.frutas[fruta2], self.frutas[fruta3]]
+    try:
+      value = re.sub('[^0-9]', '', value)
+      fruta1 = int(value[0]) - 1
+      fruta2 = int(value[1]) - 1
+      fruta3 = int(value[2]) - 1
+      self.frutasSelecionadas = [self.frutas[fruta1], self.frutas[fruta2], self.frutas[fruta3]]
+    except:
+      raise(Exception("Não foram informadas todas as três frutas!"))
+
   def escolherCobertura(self, value):
-    index = int(value) - 1
+    index = value - 1
     self.coberturaSelecionada = self.coberturas[index]
   def escolherTigela(self, value):
-    index = int(value) - 1
+    index = value - 1
     self.tamanhoTigelaSelecionada = self.tamanhosTigela[index]
 
 class AcaiCopo(produto.Produto):
@@ -48,11 +52,11 @@ class AcaiCopo(produto.Produto):
     self.tamanhosCopo = tamanhosCopo
     self.coberturas = cobertura
   def escolherAdicionais(self, value):
-    index = int(value) - 1
+    index = value - 1
     self.adicionaisSelecionados = self.adicionais[index]
   def escolherCobertura(self, value):
-    index = int(value) - 1
+    index = value - 1
     self.coberturaSelecionada = self.coberturas[index]
   def escolherCopo(self, value):
-    index = int(value) - 1
+    index = value - 1
     self.tamanhoCopoSelecionada = self.tamanhosCopo[index]

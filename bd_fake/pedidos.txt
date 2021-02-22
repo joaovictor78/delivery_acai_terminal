@@ -1,3 +1,25 @@
 {"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
 {"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
 {"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}, {"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 8.5, "cobertura": "Frutas Vermelhas"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 4.5, "cobertura": "Leite Condensado"}}]}
+{"itens_pedido": [{"quantidade": 2, "produto": {"preco": 8.5, "cobertura": "Frutas Vermelhas"}}, {"quantidade": 2, "produto": {"preco": 8.5, "cobertura": "Frutas Vermelhas"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 8.5, "cobertura": "Frutas Vermelhas"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Chocolate"}}]}
+{"itens_pedido": [{"quantidade": 3, "produto": {"preco": 8.5, "cobertura": "Frutas Vermelhas"}}, {"quantidade": 3, "produto": {"preco": 8.5, "cobertura": "Frutas Vermelhas"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 14.5, "cobertura": "Morango"}}]}
+{"itens_pedido": [{"quantidade": 1, "produto": {"preco": 8.5, "cobertura": "Mel"}}, {"quantidade": 1, "produto": {"preco": 8.5, "cobertura": "Mel"}}, {"quantidade": 1, "produto": {"preco": 8.5, "cobertura": "Mel"}}]}
