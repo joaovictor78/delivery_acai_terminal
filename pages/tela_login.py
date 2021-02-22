@@ -21,7 +21,7 @@ def telaLogin():
       os.system('cls' if os.name == 'nt' else 'clear')
       print("****** Ocorreu um erro ao logar *****")
       print(error)
-      resp =  input("Deseja tentar novamente? S/N ")
+      resp =  input("Deseja tentar novamente? S/N ").upper()
     if(role != None):
       if(role == 1):
         tela_admin.telaAdmin()
