@@ -38,7 +38,6 @@ class AcaiTigela(produto.Produto):
       self.frutasSelecionadas = [self.frutas[fruta1], self.frutas[fruta2], self.frutas[fruta3]]
     except:
       raise(Exception("Não foram informadas todas as três frutas!"))
-      return None
 
   def escolherCobertura(self, value):
     index = value - 1
