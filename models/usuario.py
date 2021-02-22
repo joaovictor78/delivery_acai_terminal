@@ -11,6 +11,7 @@ class Usuario(object):
     self.senha = ""
     self.endereco = ""
     self.permissao = 0
+    
   def fazerLogin(self,email,senha):
     countError = 0
     countAccont = 0
@@ -42,7 +43,6 @@ class Usuario(object):
       raise(Exception("Usuario ou senha invalidos!"))
       return None
     
-      
   def fazerLogout(self):
     self.email = None
     self.senha = None
