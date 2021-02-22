@@ -18,10 +18,7 @@ def telaLogin():
     try:
       role = minhaConta.fazerLogin(email, senha)
     except Exception as error:
-      os.system('cls' if os.name == 'nt' else 'clear')
-      print("****** Ocorreu um erro ao logar *****")
       print(error)
-      resp =  input("Deseja tentar novamente? S/N")
     if(role != None):
       if(role == 1):
         tela_admin.telaAdmin()
@@ -35,3 +32,9 @@ def telaLogin():
         tela_cliente.telaCliente(minhaConta)
         os.system('cls' if os.name == 'nt' else 'clear')
         tela_inicial.telaInicial()
+    else:
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("****** Ocorreu um erro ao logar *****")
+      resp =  input("Deseja tentar novamente? S/N")
+    
+

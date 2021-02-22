@@ -6,3 +6,4 @@
 { "email": "josemelo1904003@gmail.com", "senha": "estudar19", "nome": "José Vitor", "role": 3, "telefone" : "69992147960"}
 { "email": "lucas@gmail.com", "senha": "456", "nome": "Lucas", "role": 3, "telefone" : "30698756"}
 { "email": "ana.braga@gmail.com", "senha": "ana.braga12", "nome": "Ana Braga", "role": 3, "telefone" : "992147960"}
+{ "email": "joaovitor@gmail.com", "senha": "123456", "nome": "carlos", "role": 3, "telefone" : "11111111"}

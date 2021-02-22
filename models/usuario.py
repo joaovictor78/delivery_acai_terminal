@@ -38,6 +38,7 @@ class Usuario(object):
     except:
       raise(Exception("Usuario ou senha invalidos!"))
       return None
+    
       
   def fazerLogout(self):
     self.email = None
